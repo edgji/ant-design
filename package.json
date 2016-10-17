@@ -42,6 +42,7 @@
     "moment": "^2.15.1",
     "object-assign": "~4.1.0",
     "omit.js": "^0.1.0",
+    "postinstall-build": "^2.1.3",
     "rc-animate": "~2.3.0",
     "rc-calendar": "~7.2.0",
     "rc-cascader": "~0.10.1",
@@ -146,6 +147,7 @@
     "pre-publish": "node ./scripts/prepub",
     "prepublish": "antd-tools run guard",
     "pub": "antd-tools run update-self && antd-tools run pub",
+    "postinstall": "postinstall-build lib --script compile",
     "authors": "git log --format='%aN <%aE>' | sort -u | grep -v 'users.noreply.github.com' | grep -v 'gitter.im' | grep -v '.local>' | grep -v 'alibaba-inc.com' | grep -v 'alipay.com' | grep -v 'taobao.com' > AUTHORS.txt"
   },
   "jest": {
